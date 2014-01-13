@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lispsum</title>
+
+  <link rel="stylesheet" href="lispsum.css" />
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  
+  <script src="jquery-2.0.3.min.js"></script>
+  <script src="jquery.tabslet.min.js"></script>
+  <script src="raw_text.js"></script>
+  <script src="lispsum.js"></script>
+
+</head>
+<body>
+  <div class="background">
+    <div class="header">
+        <img class="logo" src="images/logo.png">
+        <span class="tagline">A text-generator with a speech impediment.</span>
+    </div>
+    <div class="main">
+        <div class="left-panel">
+          <span class="left-panel-heading">Could I please have:</span>
+          <form id='myform' method='POST' action='#'>
+              <input type='button' value='-' class='qtyminus' field='quantity' />
+              <input type='text' name='quantity' value='0' class='qty' />
+              <input type='button' value='+' class='qtyplus' field='quantity' />
+          </form>
+          <ul class="options-container">
+            <li class="words selected">Words</li>
+            <li class="sentences">Sentences</li>
+            <li class="paragraphs">Paragraphs</li>
+          </ul>
+        </div>
+
+        <div class="right-panel">
+          <textarea readonly id="text-output">
+          </textarea>
+          <div class="action-container">
+            <span class="character-count">
+              <span class="number-of-characters">0</span>
+              characters</span>
+            <div id="copy-to-clipboard" data-clipboard-text="Copy Me!">Copy to clipboard</div>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="ZeroClipboard.min.js"></script>
+<script>
+    var clip = new ZeroClipboard($("#copy-to-clipboard"));
+
+    //this event happens upon initiating the copy 
+    clip.on( 'dataRequested', function ( client, args ) {
+        clip.setText( $('#text-output').text());
+    } );
+
+    //this event happens upon the copy finishing
+    clip.on( 'complete', function(client, args) {
+      alert("Copied text to clipboard: " + args.text );
+    });
+</script>
+</html>
