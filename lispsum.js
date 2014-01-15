@@ -1,4 +1,6 @@
 jQuery(document).ready(function(){
+    lispsum.get_text();
+
     // This button will increment the value
     $('.qtyplus').click(function(e){
         // Stop acting like a button
