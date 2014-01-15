@@ -46,7 +46,52 @@ jQuery(document).ready(function(){
 
         lispsum.get_text();
     });
+
+    tagline_animation.init();
 });
+
+var tagline_count = 0;
+
+var tagline_animation = 
+{
+    taglines : taglines,
+    init: function () 
+    {
+        setTimeout(this.ease_out, 4000);
+    },
+    ease_out : function() 
+    {
+        $(".tagline").transition({ opacity: 0, x : "-100px" }, 500, 'out', function() {
+            tagline_animation.ease_in();
+            tagline_animation.update_text();
+        });
+    },
+    ease_in : function()
+    {
+        $(".tagline").transition({ opacity: 1, x : "0px" }, 500, 'in', function() {
+            tagline_animation.init();
+        });
+    },
+    update_text : function()
+    {
+        $(".tagline").html(this.get_new_tagline);
+    },
+    get_new_tagline : function() 
+    {
+        var index = lispsum.randomFromInterval(0, taglines.length);
+        if (tagline_count%2 === 0) {
+            tagline_count++;
+            return taglines[index];
+        } else {
+            tagline_count++;
+            return "A text-generator with a speech impediment."
+        }
+    }
+}
+
+
+
+
 
 var lispsum = 
 {

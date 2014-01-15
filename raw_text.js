@@ -1,4 +1,5 @@
 var paragraphs = new Array();
+var taglines = new Array();
 
 paragraphs[0] = 'Lerem ipthum dollar thit amit, contheczeur adipithcing elit. Futhce venenatith quam lacuth, eu thollicitudin nunc laoryt thagittith. Curabitur at velit nulla. In hac habitaththe platea dictumtht. thuthpendiththe pothuere fringilla ante thed lobortith. Proin velit erat, pharetra a elit non, pothuere gravida enim. Aenean eroth ipthum, lacinia at ligula vitae, malethuada digniththim thapien. Maurith id thuthcipit maurith, thit amet thodaleth nulla. Maecenath ultricieth quam arcu, vitae eleifend eroth commodo et. Phathelluth vulputate conthectetur dui, ultricieth accumthan lorem mollith a. Duith trithtique aliquet leo vitae dictum.';
 paragraphs[1] = 'Morbi thed pellentethque libero, eu interdum tortor. Nulla convallith bibendum faucibuth. Praethent nithi tortor, bibendum a faucibuth ac, variuth vitae thapien. Aenean fringilla neque lacuth, quith gravida dolor mollith at. Quithque non felith puruth. Aliquam erat volutpat. Morbi lacinia fermentum euithmod. thed eu iaculith lectuth. Curabitur euithmod odio ut etht adipithcing curthuth. Phathelluth eleifend thagittith vulputate. Nullam pharetra turpith nibh, id adipithcing dui venenatith thit amet. Integer egethtath thapien luctuth mi euithmod thodaleth. Crath a dictum orci. Praethent thit amet nithl lacinia thapien ornare pellentethque. thuthpendiththe lacinia, magna non mollith vulputate, juthto nithl eleifend maurith, ac tempor telluth orci et metuth. Donec ante lectuth, bibendum thit amet convallith nec, vulputate in leo.';
@@ -20,3 +21,13 @@ paragraphs[16] = 'Pellentethque et venenatith metuth. thuthpendiththe aliquet ve
 paragraphs[17] = 'Proin velit leo, trithtique vel molethtie a, mattith thed lorem. Nulla nec placerat dolor. In feugiat thollicitudin pellentethque. thed vel quam tincidunt, euithmod nunc ac, conthectetur lectuth. In ut erat eu eroth mattith pretium id in urna. Praethent id molethtie ipthum. Quithque at puruth eget felith thcelerithque rutrum ac quith nibh. Curabitur at neque elit. thed nulla maththa, thollicitudin vel conthectetur id, iaculith nec leo. Nunc ultriceth pothuere augue, et venenatith metuth congue quith. Aenean auctor molethtie maurith.';
 paragraphs[18] = 'Pellentethque habitant morbi trithtique thenectuth et netuth et malethuada fameth ac turpith egethtath. Pellentethque digniththim blandit etht at accumthan. Vivamuth malethuada erat quith interdum interdum. Maurith thit amet pothuere puruth. Nam conthectetur venenatith thcelerithque. Phathelluth quith accumthan augue. Vivamuth dapibuth tortor quith ipthum pretium condimentum. Nulla thollicitudin dictum condimentum. In hac habitaththe platea dictumtht. Nullam gravida temputh egethtath.';
 paragraphs[19] = 'Maurith quith quam nec odio viverra malethuada thed non nibh. Crath congue imperdiet mattith. Nullam eget blandit lectuth. Duith at rithuth thed etht rutrum hendrerit. Aliquam fringilla ipthum non turpith pretium, et pretium augue vethtibulum. Donec etht quam, auctor eget bibendum bibendum, pothuere thed rithuth. Donec pellentethque elementum odio at dapibuth.';
+
+taglines[0] = "For the asshole designer in all of us";
+taglines[1] = "Let's hope the client doesn't read it";
+taglines[2] = "Because nobody knows Latin anyways";
+taglines[3] = "Because they don't pay me enough to care";
+taglines[4] = "Extra credit if you find the emoticon";
+taglines[5] = "This is why you shouldn't do drugs";
+taglines[6] = "Because you earned it";
+taglines[7] = "Somebody get me a beer";
+taglines[8] = "Producing high-quality nonsense since 2014";
