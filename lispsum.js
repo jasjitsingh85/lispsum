@@ -63,14 +63,16 @@ var tagline_animation =
     },
     ease_out : function() 
     {
-        $(".tagline").transition({ opacity: 0, y : "-10px" }, 500, 'out', function() {
+        // $(".tagline").transition({ opacity: 0, y : "-10px" }, 500, 'out', function() {
+        $(".tagline").fadeOut("fast", function() {  
             tagline_animation.ease_in();
             tagline_animation.update_text();
         });
     },
     ease_in : function()
     {
-        $(".tagline").transition({ opacity: 1, y : "0px" }, 500, 'in', function() {
+        // $(".tagline").transition({ opacity: 1, y : "0px" }, 500, 'in', function() {
+        $(".tagline").fadeIn("fast", function() { 
             tagline_animation.init();
         });
     },
