@@ -23,33 +23,51 @@
     </div>
     <div class="main">
         <div class="left-panel">
-          <span class="left-panel-heading">Could I please have:</span>
-          <form id='myform' method='POST' action='#'>
-              <input type='button' value='-' class='qtyminus' field='quantity' />
-              <input type='text' name='quantity' value='1' class='qty' />
-              <input type='button' value='+' class='qtyplus' field='quantity' />
-          </form>
-          <ul class="options-container">
-            <li class="words">Words</li>
-            <li class="sentences">Sentences</li>
-            <li class="paragraphs selected">Paragraphs</li>
-          </ul>
+          <div class="main-left-panel">
+            <span class="left-panel-heading">Could I please have:</span>
+            <form id='myform' method='POST' action='#'>
+                <input type='button' value='-' class='qtyminus' field='quantity' />
+                <input type='text' name='quantity' value='1' class='qty' />
+                <input type='button' value='+' class='qtyplus' field='quantity' />
+            </form>
+            <ul class="options-container">
+              <li class="words">Words</li>
+              <li class="sentences">Sentences</li>
+              <li class="paragraphs selected">Paragraphs</li>
+            </ul>
+          </div>
+          <div class="advertise-left-panel">
+              <span class="advertise-text">Care to support our efforts and reach out to a growing audience  of designers and developers? Shoot us a message and see how you can advertise with us!</span>
+              <span class="back-to-text-button">Back to Text</span>
+          </div>
         </div>
 
         <div class="right-panel">
-          <textarea readonly id="text-output">
-          </textarea>
-          <div class="action-container">
-            <span class="character-count">
-              <span class="number-of-characters">0</span>
-              characters</span>
-            <div id="copy-to-clipboard" data-clipboard-text="Copy Me!">Copy to clipboard</div>
+          <div class="main-right-panel">
+            <textarea readonly id="text-output">
+            </textarea>
+            <div class="action-container">
+              <span class="character-count">
+                <span class="number-of-characters">0</span>
+                characters</span>
+              <div id="copy-to-clipboard" data-clipboard-text="Copy Me!">Copy to clipboard</div>
+            </div>
+          </div>
+          <div class="advertise-right-panel">
+            <form class="advertise-form">
+              <input type="text" placeholder=" Your Name" name="name">
+              <input type="email" placeholder=" Email" name="email">
+              <input type="text" placeholder=" Company" name="company">
+              <input type="phone" placeholder=" Phone" name="phone">
+              <textarea class="advertise-message" placeholder=" Message"></textarea>
+            </form>
+            <span class="send-email-button">Send email!</span>
           </div>
         </div>
     </div>
     <div class="footer">
-        <span>2014 Lispsum.com</span>
-        <span>Advertise</span>
+        <span>&copy;2014 Lispsum.com</span>
+        <span class="advertise">Advertise</span>
     </div>
   </div>
 </body>

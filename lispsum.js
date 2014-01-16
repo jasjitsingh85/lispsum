@@ -49,10 +49,32 @@ jQuery(document).ready(function(){
         lispsum.get_text();
     });
 
+    $('.advertise').on("click", function() {
+        advertise.show();
+    });
+
     tagline_animation.init();
 });
 
 var tagline_count = 0;
+
+var advertise = {
+    show: function() 
+    {
+        this.show_left_panel()
+        this.show_right_panel();
+    },
+    show_left_panel : function() 
+    {
+        $('.main-left-panel').hide();
+        $('.advertise-left-panel').show();
+    },
+    show_right_panel : function()
+    {
+        $('.main-right-panel').hide();
+        $('.advertise-right-panel').show();
+    }
+}
 
 var tagline_animation = 
 {
@@ -83,13 +105,14 @@ var tagline_animation =
     get_new_tagline : function() 
     {
         var index = lispsum.randomFromInterval(0, taglines.length);
-        if (tagline_count%2 === 0) {
-            tagline_count++;
-            return taglines[index];
-        } else {
-            tagline_count++;
-            return "A text-generator with a speech impediment."
-        }
+        return taglines[index];
+        // if (tagline_count%2 === 0) {
+        //     tagline_count++;
+        //     return taglines[index];
+        // } else {
+        //     tagline_count++;
+        //     return "A text-generator with a speech impediment."
+        // }
     }
 }
 
