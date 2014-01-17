@@ -23,7 +23,7 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'jazjit.singh@gmail.com';//<== update the email address
+$email_from = 'jeffreymames@gmail.com';//<== update the email address
 $email_subject = "New Form submission";
 $email_body = "You have received a new message from the user $name. Their phone number is $phone.  They work at $company\n".
     "Here is the message:\n $message".
