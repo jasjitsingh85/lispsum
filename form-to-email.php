@@ -1,4 +1,6 @@
 <?php
+require_once('class.phpmailer.php');
+
 if(!isset($_POST['submit']))
 {
 	//This page should not be accessed directly. Need to submit the form.
@@ -23,7 +25,7 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-require_once('class.phpmailer.php');
+
 
 $mail = new PHPMailer(); // create a new object
 $mail->IsSMTP(); // enable SMTP
