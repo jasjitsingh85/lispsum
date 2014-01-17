@@ -273,7 +273,7 @@ input[name=company] {
 	width:150px;
 }
 
-::-webkit-input-placeholder { color:#202020; font-size:11px; margin-left:10px;}
+::-webkit-input-placeholder { color:#202020; font-size:11px;}
 ::-moz-placeholder { color:#202020; font-size:11px; } /* firefox 19+ */
 :-ms-input-placeholder { color:#202020; font-size:11px; } /* ie */
 input:-moz-placeholder { color:#202020; font-size:11px; }
