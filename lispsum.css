@@ -242,7 +242,7 @@ input:active {
 	display:inline-block;
 	float:right;
 	margin-top:10px;
-	margin-right:30px;
+	margin-right:40px;
 	cursor:pointer;
 	font-size:11px;
 	text-align:center;
@@ -254,7 +254,7 @@ input:active {
 }
 
 .advertise-form {
-	margin:25px;
+	margin:25px 35px;
 	width:380px;
 	height:150px;
 }
@@ -263,6 +263,8 @@ input {
 	background: #f5f5f5;
 	border-radius:5px;
 	border:none;
+	height:20px;
+	margin:5px 0;
 }
 
 input[name=name] {
@@ -271,6 +273,7 @@ input[name=name] {
 
 input[name=company] {
 	width:150px;
+	margin-right:5px;
 }
 
 ::-webkit-input-placeholder { color:#202020; font-size:11px;}
@@ -279,7 +282,7 @@ input[name=company] {
 input:-moz-placeholder { color:#202020; font-size:11px; }
 
 input[name=phone] {
-	width:150px;
+	width:140px;
 }
 
 input[name=email] {
@@ -288,8 +291,9 @@ input[name=email] {
 }
 
 .advertise-message {
+	margin:5px 0;
 	width:300px;
-	height:100px;
+	height:70px;
 	background: #f5f5f5;
 	border-radius:5px;
 	border:none;
