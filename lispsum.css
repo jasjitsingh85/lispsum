@@ -241,11 +241,11 @@ input:active {
 	height: 14px;
 	display:inline-block;
 	float:right;
-	margin-top:10px;
-	margin-right:40px;
+	margin-right:75px;
 	cursor:pointer;
 	font-size:11px;
 	text-align:center;
+	line-height: 0;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;

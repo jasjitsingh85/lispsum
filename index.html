@@ -54,14 +54,15 @@
             </div>
           </div>
           <div class="advertise-right-panel">
-            <form class="advertise-form">
+            <form method="post" name="myemailform" action="form-to-email.php" class="advertise-form">
               <input type="text" placeholder=" Your Name" name="name">
               <input type="email" placeholder=" Email" name="email">
               <input type="text" placeholder=" Company" name="company">
               <input type="phone" placeholder=" Phone" name="phone">
-              <textarea class="advertise-message" placeholder=" Message"></textarea>
+              <textarea class="advertise-message" placeholder=" Message" name="message"></textarea>
+              <input type="submit" class="send-email-button" value="Send email!">
             </form>
-            <span class="send-email-button">Send email!</span>
+            
           </div>
         </div>
     </div>

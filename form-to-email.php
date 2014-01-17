@@ -6,6 +6,8 @@ if(!isset($_POST['submit']))
 }
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
+$company = $_POST['company'];
+$phone = $_POST['phone'];
 $message = $_POST['message'];
 
 //Validate first
@@ -21,12 +23,12 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'tom@amazing-designs.com';//<== update the email address
+$email_from = 'jazjit.singh@gmail.com';//<== update the email address
 $email_subject = "New Form submission";
-$email_body = "You have received a new message from the user $name.\n".
+$email_body = "You have received a new message from the user $name. Their phone number is $phone.  They work at $company\n".
     "Here is the message:\n $message".
     
-$to = "tom@amazing-designs.com";//<== update the email address
+$to = "ryanandrewgerber@gmail.com";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
