@@ -28,13 +28,13 @@ $email_subject = "New Form submission";
 $email_body = "You have received a new message from the user $name. Their phone number is $phone.  They work at $company\n".
     "Here is the message:\n $message".
     
-$to = "ryanandrewgerber@gmail.com";//<== update the email address
+$to = "jazjit.singh@gmail.com";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to thank-you page.
-header('Location: thank-you.html');
+header('Location: index.html');
 
 
 // Function to validate against any email injection attempts
