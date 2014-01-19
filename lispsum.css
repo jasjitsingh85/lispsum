@@ -316,4 +316,8 @@ input[name=email] {
 
 .advertise-message:focus{
 	outline:none;
-};
+}
+
+.copy-clipboard {
+	margin-right:8px;
+}
