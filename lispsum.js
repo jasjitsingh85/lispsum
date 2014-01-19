@@ -49,9 +49,9 @@ jQuery(document).ready(function(){
         lispsum.get_text();
     });
 
-    $('.advertise').on("click", function() {
-        advertise.show();
-    });
+    // $('.advertise').on("click", function() {
+    //     // advertise.show();
+    // });
 
     tagline_animation.init();
 });

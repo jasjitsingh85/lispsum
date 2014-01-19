@@ -17,6 +17,8 @@ body, html {
 .header {
 	display:block;
 	padding-top:30px;
+	position:absolute;
+	left:20%;
 }
 
 .logo, .tagline {
@@ -33,9 +35,12 @@ body, html {
 
 .main {
 	display:block;
-	margin:100px auto;
+/*	margin:100px auto;*/
 	width:590px;
 	height:300px;
+	position:absolute;
+	top:30%;
+	left:20%;
 }
 
 .header {
@@ -188,9 +193,13 @@ input:active {
 }
 
 .footer {
-	position:fixed;
-	bottom:30px;
-	margin:0 100px;
+/*	position: fixed;*/
+	width: 100%;
+/*	bottom: 30px;*/
+	margin: 0 100px;
+	position: absolute;
+	bottom: 3%;
+	left: 10%;
 }
 
 .advertise {
@@ -288,6 +297,11 @@ input[name=phone] {
 input[name=email] {
 	display:block;
 	width:300px;
+}
+
+.footer a {
+	color:#000000 !important;
+	text-decoration: none !important;
 }
 
 .advertise-message {
