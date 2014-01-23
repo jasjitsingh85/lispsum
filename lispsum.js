@@ -43,8 +43,15 @@ jQuery(document).ready(function(){
     });
 
     $('.options-container li').click(function(){
-        $('.selected').removeClass('selected');
-        $(this).addClass("selected");
+        var self = this;
+        if ($(this).hasClass("words")) {
+            $(".highlighted").transition({ y : '-20px'});
+        } else if ($(this).hasClass("sentences")) {
+            $(".highlighted").transition({ y : '0px'});
+        } else if ($(this).hasClass("paragraphs")) {
+            $(".highlighted").transition({ y : '20px'});
+        }
+        setTimeout(add_selected(self), 200);
 
         lispsum.get_text();
     });
@@ -54,6 +61,11 @@ jQuery(document).ready(function(){
     // });
 
     tagline_animation.init();
+
+    function add_selected(self) {
+        $('.selected').removeClass('selected');
+        $(self).addClass("selected");
+    }
 });
 
 var tagline_count = 0;
